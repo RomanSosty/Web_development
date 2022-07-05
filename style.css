@@ -1,0 +1,14 @@
+.titulni{
+ border-radius: 50%; 
+ width: 10%;
+ height: 10%;
+}
+
+body{
+    text-align: center;   
+}
+
+.background{
+    background: linear-gradient(lightCyan, skyBlue);
+}
+
