@@ -44,3 +44,8 @@ header{
     border-bottom: solid 5px white;
 }
 
+.text{
+    height: 150px;
+    width: 500px;
+}
+
