@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<div class="background">
     <head>
         <link rel="stylesheet" href="style.css">
         <title>Sosty</title>
@@ -10,9 +9,11 @@
     <header>
         <div class="navbar">
             <div class="contaier">
-                <a href="index.html">Sosty<span>Web</span></a>
+                <a class="logo" href="index.html">Sosty<span>Web</span></a>
+                <img id="mobile-cta" class="mobile-menu" src="img/menu.svg"> 
 
                 <nav>
+                    <img id="mobile-exit" class="mobile-menu-exit" src="img/exit.svg" alt="Close Navigation">
                     <ul class="primary-nav">
                         <li><a class="current" href="index.html">Home</a></li>
                         <li><a href="index.html">About Me</a></li>
@@ -29,55 +30,84 @@
     </header> 
     
     <main>
-        <section class="aboutme">
-        <h2>About Me</h2> <br>
+        <section class="hero">
+            <div class="contaier">
+                <div class="left-col">
+                    <p class="subhead">About Me</p>
 
-        <p>Consultant for the attendance system with more than <strong>6</strong> years of experience.<br>
-           I'm currently focusing on programming.<br> 
-            
-           I have knowledge in:<br>
-        <ul>
-           <li>C</li> 
-           <li>C++</li>
-           <li>C#</li>
-           <li>HTML</li>
-           <li>SQL</li>
-           <li>CSS</li>
-        </ul>
-            
-        There is a link to GitHub with some of my projects.</p> 
-        <a href="https://github.com/RomanSosty">GitHub</a><br>
+                    <h1>Web development and design is my hobby</h1>
+                    
+                    <div class="hero-cta">
+                        <a href="#" class="primary-cta">More Info</a>
+                    </div>
+                </div>
 
-        <img class="titulni" src="img/1656412136555.jpeg">
+                <img src="img/illustration.svg" class="hero-img" alt="image">
+            </div>
       </section>
+
+      <section class="features-section">
+        <div class="container">
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>SQL</li>
+                <li>C#</li>
+            </ul>
+
+            <img src="img/1656412136555.jpeg" alt="me">
+        </div>
+      </section>
+
       <section class="Gallery">
-        <h2>Gallery</h2>  
-            <p>
-            <img class="gallery" src="img/IMG_0032.jpeg">
-            <img class="gallery" src="img/IMG_0089.PNG">
-            <img class="gallery" src="img/IMG_0095.PNG">
-            </p>
-        
-            <p>
-            <img class="gallery" src="img/IMG_0296.PNG">
-            <img class="gallery" src="img/IMG_0066.PNG">
-            <img class="gallery" src="img/IMG_0087.PNG">
-            </p>
-        </section> 
-        <section class="Home">
-              <p >Máte zájem o vytvoření webových stránek ? <br>
-                Prosím zanechte mi zprávu, obratem vám odepíši a domluvíme se na další spolupráci</p>
-        
-                <input type="text" placeholder="Váš Email"> <br>
-                <input class="text" type="text" placeholder="Váš text"><br>
+        <div class="container">  
+            <ul>
+                <li>
+                    <img class="gallery" src="img/IMG_0032.jpeg">
+                </li>
+            
+                <li>
+                    <img class="gallery" src="img/IMG_0089.PNG">
+                </li>
+
+                <li>
+                    <img class="gallery" src="img/IMG_0095.PNG">
+                </li>
+            </ul>   
+        </div>
+      </section> 
+
+
+       <section class="Contact-section">
+        <div class="container">
+            <div class="contact-left">
+
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message" value="Send message">
+                </form>
+            </div>
+
+            <div class="contant-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2570.850655956237!2d18.44883560000001!3d49.882831100000026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4711560c54957ec1%3A0xd96d60713e9ff0c2!2sD%C4%9Btmarovice%201173%2C%20735%2071%20D%C4%9Btmarovice!5e0!3m2!1scs!2scz!4v1657131348088!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
                 
-                <button>Odeslat</button><br>
-            </section>
+                
+        </section>
     </main>
  </body>
- <nav>
-    <a href="https://github.com/RomanSosty/Web_development"> GitHub</a>
-    <a href="https://www.linkedin.com/in/roman-šostok-7559241b6/">Linkedin</a>
- </nav>
-</div>
 </html>
