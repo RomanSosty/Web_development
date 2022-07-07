@@ -184,7 +184,7 @@ nav {
   height: 100vh;
   padding: 1em;
 }
-nav ul.primary-nav {
+nav .primary-nav {
   margin-top: 5em;
 }
 nav li a {
@@ -233,13 +233,13 @@ nav li a:hover {
     font-size: 1em;
     padding: 0.1em 1em;
   }
-  .navbar nav ul.primary-nav {
+  .navbar nav .primary-nav {
     margin: 0;
   }
-  .navbar nav li.current a {
+  .navbar nav .current {
     font-weight: bold;
   }
-  .navbar nav li.go-premium a {
+  .navbar nav .go-premium {
     color: var(--primary-color);
     border: 3px solid var(--primary-color);
     font-weight: bold;
@@ -247,7 +247,7 @@ nav li a:hover {
     margin-top: -0.2em;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1080px) {
   .container {
     width: 1080px;
     margin: 0 auto;
@@ -261,5 +261,85 @@ nav li a:hover {
     display: flex;
     justify-content: space-between;
     text-align: left;
+  }
+
+  .left-col {
+    margin: 3em 3em 0 5em;
+  }
+  .left-col h1 {
+    font-size: 3em;
+    width: 90%;
+  }
+
+  .hero-img {
+    width: 30%;
+    margin-right: 8em;
+  }
+
+  ul.features-list {
+    display: block;
+    margin-left: 5em;
+  }
+  ul.features-list li {
+    font-size: 1.4em;
+  }
+  ul.features-list li:before {
+    width: 30px;
+    height: 30px;
+  }
+
+  .features-section {
+    position: relative;
+  }
+
+  .features-section img {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 350px;
+    bottom: -2em;
+    border-radius: 50%;
+  }
+
+  .Gallery ul {
+    display: flex;
+  }
+  .Gallery ul li {
+    margin: 0 1em;
+  }
+
+  .Contact-section {
+    position: relative;
+  }
+  .Contact-section .container {
+    display: flex;
+  }
+
+  .contact-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 1450px) {
+  .features-section:before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 20em;
+    background: var(--primary-color);
+    left: 0;
+    top: -4em;
+  }
+  .features-section:after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 20em;
+    background: url("../Web_development/img/dots.svg") no-repeat;
+    left: 4.5em;
+    top: 2em;
   }
 }/*# sourceMappingURL=style.css.map */
